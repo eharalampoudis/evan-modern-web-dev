@@ -1,40 +1,23 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
 import classNames from "classnames";
-import Navbar from 'react-bootstrap/Navbar';
-import Button from 'react-bootstrap/Button';
-import Form from 'react-bootstrap/Form';
-import FormControl from 'react-bootstrap/FormControl';
-
+import Typical from 'react-typical';
+import { Navbar, Container, Row, Col } from 'react-bootstrap';
+import {BrowserRouter as Router, Switch, Route, Link} from "react-router-dom";
 
 
 export const Nav = () => {
-    function isActive(path) {
-        let pname = window.location.pathname;
-        if(pname === path){
-          return(true);
-        }
-      };
-    return(
-    <div className="nav">
-        <a href="/a" className={classNames({
-        'nav-item': true,
-        active: isActive('/a'),
-      })}>
-        Home
-      </a>
-      <a href="/b" className={classNames({
-        'nav-item': true,
-        active: isActive('/b'),
-      })}>
-        Personal
-      </a>
-      <a href="/c" className={classNames({
-        'nav-item': true,
-        active: isActive('/c'),
-      })}>
-       Memeing
-      </a>
-    </div>
-    )
+
+  return(
+    <Container fluid>
+      <Navbar  variant="light" fill fixed="top" expand="lg">
+        <Col xs={8}> <Navbar.Brand>Haralampoudis</Navbar.Brand> </Col>
+        <Col> <Navbar.Text className="navigators"><Link exact to="/">Home</Link></Navbar.Text></Col>
+        <Col> <Navbar.Text className="navigators"><Link to="/Personal">Personal</Link></Navbar.Text> </Col>
+        <Col> <Navbar.Text className="navigators"><Link to="/Professional">Professional</Link></Navbar.Text> </Col>
+      </Navbar>
+    </Container>
+  )
 }
+
+
