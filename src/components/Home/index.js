@@ -9,10 +9,10 @@ export const Home = () => {
       <center>
       <Container fluid className="center-container">
           <Typical
-        steps={['I am', 1000, 'I am an assassin!', 1500, 'I am', 300, 'I am sure!', 1500, 'I am', 300, 'I am Evan!', 1500]}
+        steps={['Assassin stats:', 1500, '6 Kills', 1000, '20 people left', 1000, 'May the best player win', 1000]}
         loop={2}
         wrapper='h1'/>
-        <p className="poop">Yee Yurr</p>
+        <p className="lower-text">Yee Yurr</p>
       </Container>
       </center>
     )

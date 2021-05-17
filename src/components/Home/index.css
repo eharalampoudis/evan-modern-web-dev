@@ -13,9 +13,10 @@
 
 }
 .center-container{
-    padding: 22vh 0;
+    padding: 12vh 0;
+    
 }
-p{
+.lower-text{
     color: #212529;
 }
 h1{

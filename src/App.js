@@ -18,7 +18,7 @@ import classNames from "classnames";
 function App() {
   return (
     <Router>
-    <Container>
+    <Container className='central'>
       <Nav />
       <Background />
          <Switch>

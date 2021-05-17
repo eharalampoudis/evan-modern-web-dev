@@ -29,4 +29,10 @@ p {
   margin-left: 0px;
   margin-right: 0px;
 }
+.central{
+  display: flex;              
+  flex-direction: column;     
+  justify-content: center;    
+  align-items: center;       
+}
 

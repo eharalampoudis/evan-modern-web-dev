@@ -10,7 +10,7 @@ import Typical from 'react-typical';
 export const Background = () => {
   return(
     <Container className = 'custom-container'>
-      <ParticlesBg type='cobweb' color='#212529' bg={true}/>
+      <ParticlesBg type='cobweb' color='#6c757d' bg={true}/>
     </Container>
   )
 }
