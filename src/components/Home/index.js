@@ -7,12 +7,12 @@ import Typical from 'react-typical';
 export const Home = () => {
     return(
       <center>
-      <Container fluid className="center-container">
+      <Container fluid className='center-container'>
           <Typical
-        steps={['Assassin stats:', 1500, '6 Kills', 1000, '20 people left', 1000, 'May the best player win', 1000]}
-        loop={2}
+        steps={['Welcome to my site!', 2000, 'Find out about my music taste...', 1500, 'Or my assassin game!', 1500, 'Stay a while', 1000]}
+        loop={1}
         wrapper='h1'/>
-        <p className="lower-text">Yee Yurr</p>
+        <p className="lower-text">"Yee Yurr" -Evan Haralampoudis</p>
       </Container>
       </center>
     )

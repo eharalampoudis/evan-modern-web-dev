@@ -6,7 +6,7 @@ import { Nav } from './components/Nav';
 import { Background } from './components/Background';
 import { Home } from './components/Home';
 import { Personal } from './components/Personal';
-import { Professional }  from './components/Professional';
+import { Assassin }  from './components/Assassin';
 import { Footer } from './components/Footer';
 import { Container, Row, Col } from 'react-bootstrap';
 import {BrowserRouter as Router, Switch, Route, Link} from "react-router-dom";
@@ -23,7 +23,7 @@ function App() {
       <Background />
          <Switch>
            <Route path = '/Personal'><Personal /></Route>
-           <Route path = '/Professional'><Professional /></Route>
+           <Route path = '/Assassin'><Assassin /></Route>
            <Route exact path = '/'><Home /></Route>
          </Switch>
         <Footer />

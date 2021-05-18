@@ -14,7 +14,7 @@ export const Nav = () => {
         <Col xs={8}> <Navbar.Brand><h3 class='custom-badge'><Badge variant="dark">Evan Haralampoudis</Badge></h3></Navbar.Brand> </Col>
         <Col> <Navbar.Text className="navigators"><Link exact to="/">Home</Link></Navbar.Text></Col>
         <Col> <Navbar.Text className="navigators"><Link to="/Personal">Personal</Link></Navbar.Text> </Col>
-        <Col> <Navbar.Text className="navigators"><Link to="/Professional">Professional</Link></Navbar.Text> </Col>
+        <Col> <Navbar.Text className="navigators"><Link to="/Assassin">Assassin</Link></Navbar.Text> </Col>
       </Navbar>
     </Container>
   )
