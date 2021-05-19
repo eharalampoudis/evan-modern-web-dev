@@ -8,11 +8,11 @@ import { Home } from './components/Home';
 import { Personal } from './components/Personal';
 import { Assassin }  from './components/Assassin';
 import { Footer } from './components/Footer';
+import { SMusic } from './components/Music';
 import { Container, Row, Col } from 'react-bootstrap';
 import {BrowserRouter as Router, Switch, Route, Link} from "react-router-dom";
 import { useEffect, useState } from 'react';
 import classNames from "classnames";
-
 
 
 function App() {
@@ -22,7 +22,7 @@ function App() {
       <Nav />
       <Background />
          <Switch>
-           <Route path = '/Personal'><Personal /></Route>
+           <Route path = '/Personal'><SMusic /></Route>
            <Route path = '/Assassin'><Assassin /></Route>
            <Route exact path = '/'><Home /></Route>
          </Switch>
